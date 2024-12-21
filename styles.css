@@ -31,9 +31,13 @@ footer {
   color:beige;
 }
 
-.flex-box {
+.wrapper {
   display: flex;
-  align-items: center;
+  background-color: bisque;
+}
+
+.cards {
+  flex-wrap: wrap;
 }
 
 img {
