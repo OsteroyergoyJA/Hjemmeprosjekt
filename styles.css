@@ -19,7 +19,7 @@ nav {
 }
 
 .boxes {
- 
+  display: none;
   background-color: rgb(88,111,124);
   padding: 10px;
   border-radius:  25px;
@@ -29,8 +29,4 @@ nav {
 footer {
   background-color: rgb(47,69,80);
   color:beige;
-}
-
-.sections {
-  color: black;
 }
