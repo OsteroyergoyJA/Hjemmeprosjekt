@@ -49,7 +49,7 @@ function displayCars() {
 
   else {
     clearInterval(intervalId);
-    codument.getElementsByClassName('sections')[0].innerHTML = '<p> No more cars to show.</p>';
+    document.getElementsByClassName('sections')[0].innerHTML = '<p> No more cars to show.</p>';
   }
 
 }
