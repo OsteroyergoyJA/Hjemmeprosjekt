@@ -25,7 +25,7 @@ document.querySelector(".next").addEventListener("click", function() {
 
 showBoxes(boxIndex);
 
-/* Hvorfor må det være let? */
+ /*Hvorfor må det være let? */
 
 let objectArray = [
   {car: "skoda", isGood: true},
@@ -40,28 +40,29 @@ let cars = objectArray.map(function (cars) {
 console.log("first car type:", objectArray[0].car);
 
 
+let cartype = objectArray.map((car) => car.car);
 
-/* let names = arrayDetails.map((person) => person.name);
+/*Hvorfor car.car, trodde det skulle være cars.car */
 
 let i = 0;
 
-function displayNames() {
-  if (i < names.length) {
+function displayCars() {
+  if (i < cartype.length) {
     let displayContent = `
-    <p>Name 1: ${names[i]}</p>
-    <p>Name 2: ${names[i + 1]}</p>
-`;
-
-    document.getElementById('names-list').innerHTML = displayContent;
+      <p>Car 1: ${cartype[i]}</p>
+      <p>Car 2: ${cartype[i + 1]}</p>
+    `;
+    
+    document.getElementsByClassName('sections')[0].innerHTML = displayContent;
     i += 2;
   } else {
     clearInterval(intervalId);
-    document.getElementById('names-list').innerHTML =
-      '<p>No more names to show.</p>';
+    document.getElementsByClassName('sections')[0].innerHTML =
+      '<p>No more cars to show.</p>';
   }
 }
 
-let intervalId = setInterval(displayNames, 6000);
 
-displayNames();
-*/ 
+let intervalId = setInterval(displayCars, 6000);
+
+displayCars();
