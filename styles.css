@@ -30,3 +30,12 @@ footer {
   background-color: rgb(47,69,80);
   color:beige;
 }
+
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-height: 45px;
+}
