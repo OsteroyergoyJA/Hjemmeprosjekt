@@ -31,15 +31,52 @@ footer {
   color:beige;
 }
 
-.wrapper {
+.flex-box {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
   background-color: bisque;
+  border-radius: 25px;
+  padding: 30px;
 }
 
 .cards {
+  height: 100%;
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.front-view {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.card {
+  cursor: pointer;
+  max-height: 45px;
+background-color: blue;
+display: flex;
+align-items: center;
+justify-content: center;
+height: calc(100% / 4 - 10px);
+width: calc(100% / 4 - 10px);
+}
+
+.back-view {
+  max-height: 45px;
+  background-color: blueviolet;
+  list-style-type: none;
 }
 
 img {
   max-height: 45px;
 }
+
